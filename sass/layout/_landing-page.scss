@@ -9,35 +9,10 @@
   border: 1px solid;
   border-bottom: none;
 }
-.carousel-section {
-  @media only screen and (max-width: 68.74em) {
-    display: none;
-  }
-}
-#carousel {
-  display: flex;
-  overflow: hidden;
-  padding: 0;
-  margin: 0;
-  position: relative;
-  height: 90vh;
-  width: 40vw;
-}
-#carousel li {
-  opacity: 0;
-  list-style: outside none none;
-  position: absolute;
-  background: transparent;
-  transition: opacity 1s;
-}
-.carousel-img {
-  max-width: 100%;
-  height: auto;
-}
 .heading {
   &-main {
     font-size: 3rem;
-    margin-top: 10rem;
+    margin-top: 3rem;
     @include respond(tab-land) {
       font-size: 3rem;
     }
@@ -45,10 +20,5 @@
       margin-top: 0;
       font-size: 2rem;
     }
-    // &-large-screen {
-    //   animation: moveFromDown 1s 0.4s;
-    //   backface-visibility: hidden;
-    //   animation-fill-mode: backwards;
-    // }
   }
 }

@@ -18,6 +18,7 @@ html {
   @include respond(big-desktop) {
     font-size: 75%; //1rem  to be  12px , 12/16=75%
   }
+  scroll-behavior: smooth;
 }
 
 body {

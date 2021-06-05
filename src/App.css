@@ -14,7 +14,8 @@
 
 html {
   font-size: 62.5%;
-  /*1 rem=10px, 62.5%of root font size 16px=10px*/ }
+  /*1 rem=10px, 62.5%of root font size 16px=10px*/
+  scroll-behavior: smooth; }
   @media only screen and (max-width: 75em) {
     html {
       font-size: 56.25%; } }
@@ -325,20 +326,9 @@ body {
 
 .nav__item {
   margin: 0 2rem 0 1rem; }
-  .nav__item-1, .nav__item-2, .nav__item-3 {
-    animation: moveFromDown 1s 0.5s;
-    backface-visibility: hidden;
-    animation-fill-mode: backwards; }
-  .nav__item-2 {
-    animation-delay: 0.7s; }
-  .nav__item-3 {
-    animation-delay: 0.9s; }
 
 .nav__logo {
   font-size: 1.65rem;
-  animation: moveFromDown 1s 0.3s;
-  backface-visibility: hidden;
-  animation-fill-mode: backwards;
   color: #fed206; }
 
 .hamburger {
@@ -419,33 +409,9 @@ body {
     .section-landing-page {
       padding: 4rem 1rem; } }
 
-@media only screen and (max-width: 68.74em) {
-  .carousel-section {
-    display: none; } }
-
-#carousel {
-  display: flex;
-  overflow: hidden;
-  padding: 0;
-  margin: 0;
-  position: relative;
-  height: 90vh;
-  width: 40vw; }
-
-#carousel li {
-  opacity: 0;
-  list-style: outside none none;
-  position: absolute;
-  background: transparent;
-  transition: opacity 1s; }
-
-.carousel-img {
-  max-width: 100%;
-  height: auto; }
-
 .heading-main {
   font-size: 3rem;
-  margin-top: 10rem; }
+  margin-top: 3rem; }
   @media only screen and (max-width: 75em) {
     .heading-main {
       font-size: 3rem; } }
@@ -588,13 +554,16 @@ hr {
     font-size: 1.75rem; }
     @media only screen and (max-width: 75em) {
       .section-about__skills {
-        width: 100%; } }
+        width: 100%;
+        justify-content: flex-start;
+        gap: 4rem; } }
     @media only screen and (max-width: 45em) {
       .section-about__skills {
         font-size: 2rem; } }
     @media only screen and (max-width: 26.875em) {
       .section-about__skills {
-        font-size: 1.75rem; } }
+        font-size: 1.75rem;
+        gap: 2rem; } }
 
 .ab-cont {
   width: 60%; }
