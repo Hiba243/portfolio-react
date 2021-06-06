@@ -21,7 +21,6 @@
   }
   &__item {
     margin: 0 2rem 0 1rem;
-   
   }
   &__logo {
     font-size: 1.65rem;
@@ -85,9 +84,6 @@
     display: block;
     cursor: pointer;
     z-index: 150;
-    animation: moveFromDown 1s 0.3s;
-    backface-visibility: hidden;
-    animation-fill-mode: backwards;
   }
 
   .hamburger.active .bar:nth-child(2) {

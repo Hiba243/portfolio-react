@@ -1,9 +1,12 @@
-import Slide from 'react-reveal/Slide';
+import "animate.css/animate.min.css";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const Contact = () => {
     return <section className="section-contact" id="contact">
         <div className="section-contact__content">
-            <Slide left><p><span className="arr-purple">&rarr;</span> Get In Touch</p></Slide>
+            <ScrollAnimation animateIn="animate__fadeInLeft" className="animate__animated" animateOnce={true}>
+                <p><span className="arr-purple">&rarr;</span> Get In Touch</p>
+            </ScrollAnimation>
             <p>
                 Drop me a line:&nbsp;
                 <a href="#" className="copy-click">xyz@gmail.com</a>

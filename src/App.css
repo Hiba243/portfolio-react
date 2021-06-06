@@ -66,43 +66,12 @@ a.link-effect:hover::before {
   visibility: visible;
   transform: scaleX(1); }
 
-input {
-  margin: 1rem 0;
-  padding: 0.5rem;
-  width: 100%;
-  font-size: 1rem; }
-
 .copy-click {
   position: relative;
   padding-bottom: 2px;
   text-decoration: none;
   border-bottom: 2px solid #fed206;
-  transition: background-color calc(var(--duration) * 2) var(--ease); }
-  .copy-click:after {
-    content: attr(data-tooltip-text);
-    position: absolute;
-    bottom: calc(100% + 6px);
-    left: 50%;
-    padding: 8px 16px;
-    white-space: nowrap;
-    background-color: #faf6f0;
-    color: #0c0c0c;
-    border-radius: 4px;
-    box-shadow: 0 0 0 -12px rgba(0, 0, 0, 0);
-    pointer-events: none;
-    backface-visibility: hidden;
-    opacity: 0;
-    transform: translate(-50%, 12px);
-    transition: box-shadow calc(var(--duration) / 1.5) var(--bounce), opacity calc(var(--duration) / 1.5) var(--bounce), transform calc(var(--duration) / 1.5) var(--bounce); }
-  .copy-click.is-hovered:after {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    opacity: 1;
-    transform: translate(-50%, 0);
-    transition-timing-function: var(--ease); }
-  .copy-click.is-copied {
-    background-color: rgba(255, 255, 255, 0.6); }
-    .copy-click.is-copied:after {
-      content: attr(data-tooltip-text-copied); }
+  cursor: default; }
 
 /* Works on Firefox */
 * {
@@ -118,23 +87,6 @@ input {
   *::-webkit-scrollbar-thumb {
     background-color: #8f6df5;
     border-radius: 20px; } }
-
-.cursor {
-  width: 64px;
-  height: 64px;
-  border-radius: 100%;
-  border: 1px solid rgba(255, 255, 255, 0.6);
-  transition: all 200ms ease-out;
-  position: fixed;
-  pointer-events: none;
-  left: 0;
-  top: 0;
-  transform: translate(calc(-50% + 15px), -50%); }
-
-.cursorinnerhover {
-  width: 50px;
-  height: 50px;
-  opacity: 0.5; }
 
 .arr-purple {
   color: #8f6df5; }
@@ -377,10 +329,7 @@ body {
   .hamburger {
     display: block;
     cursor: pointer;
-    z-index: 150;
-    animation: moveFromDown 1s 0.3s;
-    backface-visibility: hidden;
-    animation-fill-mode: backwards; }
+    z-index: 150; }
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
     background-color: #faf6f0; }
@@ -410,8 +359,7 @@ body {
       padding: 4rem 1rem; } }
 
 .heading-main {
-  font-size: 3rem;
-  margin-top: 3rem; }
+  font-size: 3rem; }
   @media only screen and (max-width: 75em) {
     .heading-main {
       font-size: 3rem; } }
@@ -423,24 +371,22 @@ body {
 .section-work {
   border: 1px solid;
   border-bottom: none; }
-  .section-work__heading__text {
+  .section-work__heading {
     font-size: 3rem;
     padding: 4rem 2rem 6rem 2rem; }
     @media only screen and (max-width: 26.875em) {
-      .section-work__heading__text {
+      .section-work__heading {
         padding: 4rem 1rem; } }
-    @media only screen and (max-width: 45em) {
-      .section-work__heading__text {
-        margin-bottom: 3rem; } }
     @media only screen and (max-width: 26.875em) {
-      .section-work__heading__text {
+      .section-work__heading {
         font-size: 2rem; } }
 
 .project {
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  padding: 0 2rem; }
+  padding: 0 2rem;
+  padding-bottom: 5rem; }
   @media only screen and (max-width: 26.875em) {
     .project {
       padding: 0 1rem; } }
@@ -448,9 +394,6 @@ body {
     background-color: #faf6f0;
     width: 100%;
     height: 500px; }
-    @media only screen and (max-width: 45em) {
-      .project__img {
-        width: 100%; } }
   .project__desc {
     display: flex;
     flex-direction: row; }
@@ -501,11 +444,6 @@ body {
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start; } }
-  .project-p1 {
-    padding-bottom: 5rem; }
-    @media only screen and (max-width: 45em) {
-      .project-p1 {
-        padding-bottom: 5rem; } }
 
 hr {
   margin-bottom: 5rem;
@@ -528,15 +466,15 @@ hr {
   @media only screen and (max-width: 75em) {
     .section-about {
       flex-direction: column; } }
-  .section-about__heading__text {
+  .section-about__heading {
     font-size: 3rem;
     margin-bottom: 4rem; }
     @media only screen and (max-width: 45em) {
-      .section-about__heading__text {
+      .section-about__heading {
         margin-top: 4rem;
         margin-bottom: 4rem; } }
     @media only screen and (max-width: 26.875em) {
-      .section-about__heading__text {
+      .section-about__heading {
         font-size: 2rem; } }
   .section-about__content {
     font-size: 1.75rem; }

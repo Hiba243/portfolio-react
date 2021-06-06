@@ -12,7 +12,6 @@
 .heading {
   &-main {
     font-size: 3rem;
-    margin-top: 3rem;
     @include respond(tab-land) {
       font-size: 3rem;
     }

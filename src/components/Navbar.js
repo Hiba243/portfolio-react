@@ -51,22 +51,22 @@ const Navbar = () => {
         <ul className="nav__menu" ref={refNavMenu}>
           <div className="link-flex">
             <div className="star" id="star-1" ref={refStar1}></div>
-            <li className="nav__item nav__item-1">
-              <a href="#about" className="nav__link link-effect nav__link-1" onClick={closeMenu} onMouseOver={rotate1} onMouseLeave={rotate1}
+            <li className="nav__item">
+              <a href="#about" className="nav__link link-effect" onClick={closeMenu} onMouseOver={rotate1} onMouseLeave={rotate1}
               >About</a
               >
             </li>
           </div>
           <div className="link-flex">
             <div className="star" id="star-2" ref={refStar2}></div>
-            <li className="nav__item nav__item-2">
-              <a href="#work" className="nav__link link-effect nav__link-2" onClick={closeMenu} onMouseOver={rotate2} onMouseLeave={rotate2}>Work</a>
+            <li className="nav__item">
+              <a href="#work" className="nav__link link-effect" onClick={closeMenu} onMouseOver={rotate2} onMouseLeave={rotate2}>Work</a>
             </li>
           </div>
           <div className="link-flex">
             <div className="star" id="star-3" ref={refStar3}></div>
-            <li className="nav__item nav__item-3">
-              <a href="#contact" className="nav__link link-effect nav__link-3" onClick={closeMenu} onMouseOver={rotate3} onMouseLeave={rotate3}
+            <li className="nav__item">
+              <a href="#contact" className="nav__link link-effect" onClick={closeMenu} onMouseOver={rotate3} onMouseLeave={rotate3}
               >Contact</a
               >
             </li>

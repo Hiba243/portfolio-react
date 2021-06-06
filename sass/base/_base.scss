@@ -86,56 +86,12 @@ a.link-effect:hover::before {
 // }
 
 //copy to clipboard
-input {
-  margin: 1rem 0;
-  padding: 0.5rem;
-  width: 100%;
-  font-size: 1rem;
-}
-
 .copy-click {
   position: relative;
   padding-bottom: 2px;
   text-decoration: none;
   border-bottom: 2px solid $color-yellow;
-  transition: background-color calc(var(--duration) * 2) var(--ease);
-
-  &:after {
-    content: attr(data-tooltip-text);
-    position: absolute;
-    bottom: calc(100% + 6px);
-    left: 50%;
-    padding: 8px 16px;
-    white-space: nowrap;
-    background-color: $color-secondary;
-    color: $color-primary;
-    border-radius: 4px;
-    box-shadow: 0 0 0 -12px rgba(0, 0, 0, 0);
-    pointer-events: none;
-    backface-visibility: hidden;
-    opacity: 0;
-    transform: translate(-50%, 12px);
-    transition: box-shadow calc(var(--duration) / 1.5) var(--bounce),
-      opacity calc(var(--duration) / 1.5) var(--bounce),
-      transform calc(var(--duration) / 1.5) var(--bounce);
-  }
-
-  &.is-hovered {
-    &:after {
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      opacity: 1;
-      transform: translate(-50%, 0);
-      transition-timing-function: var(--ease);
-    }
-  }
-
-  &.is-copied {
-    background-color: $color-accent;
-
-    &:after {
-      content: attr(data-tooltip-text-copied);
-    }
-  }
+  cursor: default;
 }
 
 //scroll bar
@@ -160,26 +116,7 @@ input {
   }
 }
 
-//cursor
-
-.cursor {
-  width: 64px;
-  height: 64px;
-  border-radius: 100%;
-  border: 1px solid $color-accent;
-  transition: all 200ms ease-out;
-  position: fixed;
-  pointer-events: none;
-  left: 0;
-  top: 0;
-  transform: translate(calc(-50% + 15px), -50%);
-}
-.cursorinnerhover {
-  width: 50px;
-  height: 50px;
-  opacity: 0.5;
-}
-
+//arrow color
 .arr-purple {
   color: $color-purple;
 }

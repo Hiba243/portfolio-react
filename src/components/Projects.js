@@ -1,26 +1,24 @@
-import Roll from 'react-reveal/Roll';
-import Slide from 'react-reveal/Slide';
+import "animate.css/animate.min.css";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const Projects = () => {
     return <section className="section-work" id="work">
-          <Slide left>
+        <ScrollAnimation animateIn="animate__fadeInLeft" className="animate__animated" animateOnce={true}>
         <div className="section-work__heading">
-            <p className="section-work__heading__text anm-moveDown">
-                <span className="arr-purple">&rarr;</span> Selected Work
-          </p>
+            <span className="arr-purple">&rarr;</span> Selected Work
         </div>
-        </Slide>
+        </ScrollAnimation> 
         <section className="section-work__content">
-            <div className="project project-p1">
-                <Roll left>
-                <div className="project__img anm-moveRight">img</div>
-                </Roll>
+            <div className="project">
+                <ScrollAnimation animateIn="animate__rotateInUpLeft" className="animate__animated" animateOnce={true}>
+                    <div className="project__img">&nbsp;</div>
+                </ScrollAnimation>
                 <div className="project__desc">
                     <div className="project__desc-content">
                         <p className="project__desc__text-h1">Project Name</p>
                         <p className="project__desc__text-t1">
                             Deleniti dolorum fugit expedita maiores ipsam.
-                </p>
+                        </p>
                     </div>
                     <div className="project__link">
                         <a href="#" className="project__link-l1 link-effect">View Demo</a>
@@ -29,18 +27,18 @@ const Projects = () => {
                 </div>
             </div>
         </section>
-        <hr className="anm-hr" />
+        <hr/>
         <section className="section-work__content">
-            <div className="project project-p1">
-            <Roll right>
-                <div className="project__img anm-moveLeft">img</div>
-                </Roll>
+            <div className="project">
+                <ScrollAnimation animateIn="animate__rotateInUpRight" className="animate__animated" animateOnce={true}>
+                    <div className="project__img">&nbsp;</div>
+                </ScrollAnimation>
                 <div className="project__desc">
                     <div className="project__desc-content">
                         <p className="project__desc__text-h1">Project Name</p>
                         <p className="project__desc__text-t1">
                             Deleniti dolorum fugit expedita maiores ipsam.
-                </p>
+                        </p>
                     </div>
                     <div className="project__link">
                         <a href="#" className="project__link-l1 link-effect">View Demo</a>
@@ -50,6 +48,5 @@ const Projects = () => {
             </div>
         </section>
     </section>
-
 }
 export default Projects;
