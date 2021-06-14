@@ -205,6 +205,12 @@ body {
   h1 {
     font-size: 3rem !important; } }
 
+.color-purple {
+  color: #8f6df5; }
+
+.color-yellow {
+  color: #fed206; }
+
 .flower {
   z-index: 5000; }
   .flower__head {

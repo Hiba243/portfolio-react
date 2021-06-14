@@ -26,15 +26,15 @@ const About = () => {
                 </div>
             </ScrollAnimation>
             <div className="section-about__skills">
-                <div>HTML</div>
-                <div>HTML</div>
-                <div>HTML</div>
-                <div>HTML</div>
-                <div>HTML</div>
-                <div>HTML</div>
-                <div>HTML</div>
-                <div>HTML</div>
-                <div>HTML</div>
+                <div class="color-purple">HTML</div>
+                <div class="color-purple">HTML</div>
+                <div class="color-purple">HTML</div>
+                <div class="color-purple">HTML</div>
+                <div class="color-purple">HTML</div>
+                <div class="color-yellow">HTML</div>
+                <div class="color-yellow">HTML</div>
+                <div class="color-yellow">HTML</div>
+                <div class="color-yellow">HTML</div>
             </div>
         </div>
     </section>
