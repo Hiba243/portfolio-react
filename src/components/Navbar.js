@@ -11,13 +11,13 @@ const Navbar = () => {
     const navMenu=refNavMenu.current;
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
-   
+    var bodyelem;
     if (hamburger.classList.contains('active')) {
-      var bodyelem = document.getElementsByTagName('body');
+      bodyelem = document.getElementsByTagName('body');
       bodyelem[0].style.overflow = 'hidden';
     }
     else {
-      var bodyelem = document.getElementsByTagName('body');
+      bodyelem = document.getElementsByTagName('body');
       bodyelem[0].style.overflow = 'visible';
     }
   }

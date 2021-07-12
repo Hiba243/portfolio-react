@@ -1,7 +1,20 @@
 import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
-
+import { CopyToClipboard } from 'react-copy-to-clipboard';
+import Tooltip from "@material-ui/core/Tooltip";
+import { withStyles } from '@material-ui/core/styles';
+import React, { useState } from "react";
+const LightTooltip = withStyles((theme) => ({
+    tooltip: {
+        backgroundColor: theme.palette.common.white,
+        color: 'rgba(0, 0, 0, 0.87)',
+        boxShadow: theme.shadows[1],
+        fontSize: 20,
+    },
+}))(Tooltip);
 const Contact = () => {
+    const [copiedText, setCopiedText] = useState();
+
     return <section className="section-contact" id="contact">
         <div className="section-contact__content">
             <ScrollAnimation animateIn="animate__fadeInLeft" className="animate__animated" animateOnce={true}>
@@ -9,7 +22,23 @@ const Contact = () => {
             </ScrollAnimation>
             <p>
                 Drop me a line:&nbsp;
-                <a href="#" className="copy-click">xyz@gmail.com</a>
+                <CopyToClipboard
+                        text={"hibafatima24@gmail.com"}
+                        onCopy={() => setCopiedText("hibafatima24@gmail.com")}
+                    >
+                        <LightTooltip
+                            title={
+                                copiedText === "hibafatima24@gmail.com"
+                                    ? "✔ Copied to clipboard"
+                                    : "Click to copy"
+                            }
+                            placement="top"
+                            onClose={() => setCopiedText("")}
+                        >
+                            <p className="copy-click">hibafatima24@gmail.com</p>
+                        </LightTooltip>
+                    </CopyToClipboard>
+
             </p>
         </div>
         <div className="section-contact__social">

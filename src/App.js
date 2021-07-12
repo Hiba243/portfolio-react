@@ -2,12 +2,12 @@ import React from "react";
 import './App.css';
 import Home from './components/Home'
 import Project1 from "./components/Project1"
+import Error from "./components/Error";
 
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 
 function App() {
@@ -20,9 +20,10 @@ function App() {
       <Route exact path="/">
         <Home/>
       </Route>
-      <Route exact path="/:projectId">
+      <Route exact path="/projects/:projectId">
         <Project1/>
       </Route>
+      <Route component={Error} />
     </Switch>
   </Router>
 }

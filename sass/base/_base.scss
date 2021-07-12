@@ -92,6 +92,7 @@ a.link-effect:hover::before {
   text-decoration: none;
   border-bottom: 2px solid $color-yellow;
   cursor: default;
+  display: inline-block;
 }
 
 //scroll bar

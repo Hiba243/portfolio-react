@@ -23,8 +23,8 @@ const Projects = () => {
                     </div>
                     <div className="project__link">
                         <a href="#" className="project__link-l1 link-effect">View Demo</a>
-                        <Link to="/project1">
-                        <a href="#" className="project__link-l2 link-effect">View Code</a>
+                        <Link to="/projects/p1" className="project__link-l2 link-effect">
+                        View Code
                         </Link>
                     </div>
                 </div>
@@ -45,8 +45,7 @@ const Projects = () => {
                     </div>
                     <div className="project__link">
                         <a href="#" className="project__link-l1 link-effect">View Demo</a>
-                        <Link to="/project2">
-                        <a href="#" className="project__link-l2 link-effect">View Code</a>
+                        <Link to="/projects/p2" className="project__link-l2 link-effect">View Code
                         </Link>
                     </div>
                 </div>
