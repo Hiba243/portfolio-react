@@ -40,7 +40,7 @@ body {
     padding: 3rem;
   }
   @include respond(phone) {
-    padding: 1rem;
+    padding: 1.5rem;
   }
 }
 
@@ -50,7 +50,7 @@ body {
 }
 
 a {
-  color: $color-secondary;
+  color: $color-yellow;
   text-decoration: none;
   position: relative;
 }
@@ -93,6 +93,7 @@ a.link-effect:hover::before {
   border-bottom: 2px solid $color-yellow;
   cursor: default;
   display: inline-block;
+  color: $color-yellow;
 }
 
 //scroll bar

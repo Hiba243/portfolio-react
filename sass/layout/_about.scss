@@ -1,39 +1,11 @@
 .section-about {
-  border: 1px solid;
-  border-bottom: none;
-  padding: 4rem 2rem;
-  @include respond(phone) {
-    padding: 0 1rem 4rem 1rem;
-  }
-  height: fit-content;
   display: flex;
   flex-direction: row;
+  gap: 3rem;
   @include respond(tab-land) {
     flex-direction: column;
   }
-  gap: 5rem;
-
-  &__heading {
-    font-size: 3rem;
-    margin-bottom: 4rem;
-    @include respond(tab-port) {
-      margin-top: 4rem;
-      margin-bottom: 4rem;
-    }
-    @include respond(phone) {
-      font-size: 2rem;
-    }
-  }
-  &__content {
-    font-size: 1.75rem;
-    @include respond(tab-port) {
-      font-size: 2rem;
-    }
-    @include respond(phone) {
-      font-size: 1.75rem;
-    }
-  }
-
+  
   &__skills {
     display: flex;
     flex-wrap: wrap;
@@ -44,13 +16,8 @@
       justify-content: flex-start;
       gap: 4rem;
     }
-    font-size: 1.75rem;
-    @include respond(tab-port) {
-      font-size: 2rem;
-    }
-    @include respond(phone) {
-      font-size: 1.75rem;
-      gap: 2rem;
+    @include respond(phone) {   
+      gap: 1rem;
     }
   }
 }

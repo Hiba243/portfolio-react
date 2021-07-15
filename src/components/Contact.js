@@ -15,12 +15,13 @@ const LightTooltip = withStyles((theme) => ({
 const Contact = () => {
     const [copiedText, setCopiedText] = useState();
 
-    return <section className="section-contact" id="contact">
+    return <section className="section-contact section-padding" id="contact">
         <div className="section-contact__content">
             <ScrollAnimation animateIn="animate__fadeInLeft" className="animate__animated" animateOnce={true}>
-                <p><span className="arr-purple">&rarr;</span> Get In Touch</p>
+                <p className="text__content"><span className="arr-purple">&rarr;</span> Get In Touch</p>
             </ScrollAnimation>
-            <p>
+         
+            <p className="text__content">
                 Drop me a line:&nbsp;
                 <CopyToClipboard
                         text={"hibafatima24@gmail.com"}
@@ -40,8 +41,9 @@ const Contact = () => {
                     </CopyToClipboard>
 
             </p>
+         
         </div>
-        <div className="section-contact__social">
+        <div className="section-contact__social text__content">
             <p><a href="#" className="link-effect">LinkedIn</a></p>
             <p><a href="#" className="link-effect">Github</a></p>
         </div>

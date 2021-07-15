@@ -4,14 +4,40 @@ body {
   line-height: 1.75;
   color: $color-secondary;
 }
-h1 {
-  @include respond(phone) {
-    font-size: 3rem !important;
-  }
-}
+
 .color-purple{
   color:$color-purple;
 }
 .color-yellow{
   color:$color-yellow;
+}
+
+.text{
+  &__heading{
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    @include respond(tab-land) {
+      font-size: 2rem;
+    }
+  }
+  &__subheading{
+    font-size: 2.35rem;
+    @include respond(tab-land) {
+      font-size: 1.75rem;
+    }
+  }
+  &__content{
+    font-size: 2.05rem;
+    @include respond(tab-land) {
+      font-size: 1.65rem;
+    }
+  }
+}
+.section-padding{
+  padding: 3rem 2rem;
+  @include respond(phone) {
+    padding: 3rem 1.5rem;
+  }
+  border: 1px solid;
+  border-bottom: none;
 }

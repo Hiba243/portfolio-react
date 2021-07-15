@@ -2,7 +2,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 1rem;
+  padding: 3rem 2rem;
+  @include respond(phone) {
+    padding: 3rem 1.5rem;
+  }
   border: 1px solid;
   border-bottom: none;
 }
@@ -15,15 +18,21 @@
     list-style: none;
   }
   &__link {
-    font-size: 1.65rem;
+    font-size: 2.05rem;
+    @include respond(tab-land) {
+      font-size: 1.65rem;
+    }
     padding-bottom: 0.4rem;
-    color: $color-secondary;
+    color:$color-secondary;
   }
   &__item {
     margin: 0 2rem 0 1rem;
   }
   &__logo {
-    font-size: 1.65rem;
+    font-size: 2.05rem;
+    @include respond(tab-land) {
+      font-size: 1.65rem;
+    }
     color:$color-yellow;
   }
 }
@@ -65,19 +74,11 @@
       font-size: 5rem;
       padding-left: 3rem;
     }
-    &__logo {
-      font-size: 3rem;
-    }
   }
-  .nav__logo {
-    @include respond(phone) {
-      font-size: 2rem;
-    }
-  }
+
   .nav__menu.active {
     left: 0;
     top: 0;
-    padding: 20rem 0;
   }
 
   .hamburger {
