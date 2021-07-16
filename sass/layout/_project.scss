@@ -28,13 +28,10 @@
       @include respond(phone) {
         width: 100%;
       }
-    }
-    &__text {
       &-h1 {
         color: $color-yellow;
       }
     }
-    
   }
 
   &__link {

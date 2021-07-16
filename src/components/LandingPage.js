@@ -4,6 +4,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import Tooltip from "@material-ui/core/Tooltip";
 import { withStyles } from '@material-ui/core/styles';
+
 const LightTooltip = withStyles((theme) => ({
     tooltip: {
         backgroundColor: theme.palette.common.white,
@@ -12,7 +13,9 @@ const LightTooltip = withStyles((theme) => ({
         fontSize: 20,
     },
 }))(Tooltip);
+
 const LandingPage = () => {
+
     const [copiedText, setCopiedText] = useState();
     return (
         <section className="section-padding">
@@ -43,5 +46,7 @@ const LandingPage = () => {
             </ScrollAnimation>
         </section>
     );
+
 };
+
 export default LandingPage;

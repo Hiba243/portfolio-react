@@ -1,10 +1,12 @@
 import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
+
 const About = () => {
+
     return <section className="section-about section-padding" id="about">
-        <div className="ab-cont">
+        <div className="section-about__about">
             <ScrollAnimation animateIn="animate__fadeInLeft" className="animate__animated" animateOnce={true}>
-                <div className="text__heading "> 
+                <div className="text__heading ">
                     <span className="arr-purple">&rarr;</span> About Me
                 </div>
             </ScrollAnimation>
@@ -16,16 +18,16 @@ const About = () => {
                 labore et dolore magna aliqua. Proin sed libero enim sed
                 faucibus. Nec ultrices dui sapien eget mi proin sed libero enim.
                 Aenean sed adipiscing diam donec adipiscing tristique risus nec
-                feugiat.    
+                feugiat.
             </div>
         </div>
-        <div className="ski-cont">
+        <div className="section-about__skills">
             <ScrollAnimation animateIn="animate__fadeInLeft" className="animate__animated" animateOnce={true}>
                 <div className="text__heading">
                     <span className="arr-purple">&rarr;</span> My Toolkit
                 </div>
             </ScrollAnimation>
-            <div className="section-about__skills text__content">
+            <div className="section-about__skills-content text__content">
                 <div className="color-purple">HTML</div>
                 <div className="color-purple">HTML</div>
                 <div className="color-purple">HTML</div>
@@ -38,5 +40,7 @@ const About = () => {
             </div>
         </div>
     </section>
+
 }
+
 export default About;

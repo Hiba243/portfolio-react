@@ -18,22 +18,22 @@
     list-style: none;
   }
   &__link {
-    font-size: 2.05rem;
+    font-size: 1.5rem;
     @include respond(tab-land) {
       font-size: 1.65rem;
     }
     padding-bottom: 0.4rem;
-    color:$color-secondary;
+    color: $color-secondary;
   }
   &__item {
     margin: 0 2rem 0 1rem;
   }
   &__logo {
-    font-size: 2.05rem;
+    font-size: 1.5rem;
     @include respond(tab-land) {
       font-size: 1.65rem;
     }
-    color:$color-yellow;
+    color: $color-yellow;
   }
 }
 
@@ -104,7 +104,7 @@
     background-color: $color-secondary;
   }
 }
-.link-flex{
+.link-flex {
   display: flex;
   flex-direction: row;
   align-items: center;

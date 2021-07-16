@@ -1,14 +1,16 @@
 import { useRef } from 'react';
+
 const Navbar = () => {
+
   const refHamburger = useRef();
   const refNavMenu = useRef();
-  const refStar1=useRef();
-  const refStar2=useRef();
-  const refStar3=useRef();
+  const refStar1 = useRef();
+  const refStar2 = useRef();
+  const refStar3 = useRef();
 
   function mobileMenu() {
-    const hamburger=refHamburger.current;
-    const navMenu=refNavMenu.current;
+    const hamburger = refHamburger.current;
+    const navMenu = refNavMenu.current;
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
     var bodyelem;
@@ -23,8 +25,8 @@ const Navbar = () => {
   }
 
   function closeMenu() {
-    const hamburger=refHamburger.current;
-    const navMenu=refNavMenu.current;
+    const hamburger = refHamburger.current;
+    const navMenu = refNavMenu.current;
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
     var bodyelem = document.getElementsByTagName('body');
@@ -32,15 +34,15 @@ const Navbar = () => {
     bodyelem[0].style.overflow = 'visible';
   }
   function rotate1() {
-    const star1=refStar1.current;
+    const star1 = refStar1.current;
     star1.classList.toggle("star-hover");
   }
   function rotate2() {
-    const star2=refStar2.current;
+    const star2 = refStar2.current;
     star2.classList.toggle("star-hover");
   }
   function rotate3() {
-    const star3=refStar3.current;
+    const star3 = refStar3.current;
     star3.classList.toggle("star-hover");
   }
 

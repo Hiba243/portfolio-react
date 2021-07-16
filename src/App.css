@@ -68,9 +68,7 @@ a.link-effect:hover::before {
 
 .copy-click {
   position: relative;
-  padding-bottom: 2px;
   text-decoration: none;
-  border-bottom: 2px solid #fed206;
   cursor: default;
   display: inline-block;
   color: #fed206; }
@@ -211,10 +209,10 @@ body {
 
 .text__heading {
   margin-bottom: 3rem;
-  font-size: 2.5rem; }
+  font-size: 2.35rem; }
   @media only screen and (max-width: 75em) {
     .text__heading {
-      font-size: 2rem; } }
+      font-size: 1.75rem; } }
 
 .text__subheading {
   font-size: 2.35rem; }
@@ -223,7 +221,7 @@ body {
       font-size: 1.75rem; } }
 
 .text__content {
-  font-size: 2.05rem; }
+  font-size: 1.75rem; }
   @media only screen and (max-width: 75em) {
     .text__content {
       font-size: 1.65rem; } }
@@ -306,7 +304,7 @@ body {
   list-style: none; }
 
 .nav__link {
-  font-size: 2.05rem;
+  font-size: 1.5rem;
   padding-bottom: 0.4rem;
   color: #faf6f0; }
   @media only screen and (max-width: 75em) {
@@ -317,7 +315,7 @@ body {
   margin: 0 2rem 0 1rem; }
 
 .nav__logo {
-  font-size: 2.05rem;
+  font-size: 1.5rem;
   color: #fed206; }
   @media only screen and (max-width: 75em) {
     .nav__logo {
@@ -409,8 +407,8 @@ body {
       @media only screen and (max-width: 26.875em) {
         .project__desc-content {
           width: 100%; } }
-    .project__desc__text-h1 {
-      color: #fed206; }
+      .project__desc-content-h1 {
+        color: #fed206; }
   .project__link {
     width: 40%;
     display: flex;
@@ -438,31 +436,29 @@ hr {
   @media only screen and (max-width: 75em) {
     .section-about {
       flex-direction: column; } }
+  .section-about__about {
+    width: 60%; }
+    @media only screen and (max-width: 75em) {
+      .section-about__about {
+        width: 100%; } }
   .section-about__skills {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 6rem; }
+    width: 40%; }
     @media only screen and (max-width: 75em) {
       .section-about__skills {
-        width: 100%;
-        justify-content: flex-start;
-        gap: 4rem; } }
-    @media only screen and (max-width: 26.875em) {
-      .section-about__skills {
-        gap: 1rem; } }
-
-.ab-cont {
-  width: 60%; }
-  @media only screen and (max-width: 75em) {
-    .ab-cont {
-      width: 100%; } }
-
-.ski-cont {
-  width: 40%; }
-  @media only screen and (max-width: 75em) {
-    .ski-cont {
-      width: 100%; } }
+        width: 100%; } }
+    .section-about__skills-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 6rem; }
+      @media only screen and (max-width: 75em) {
+        .section-about__skills-content {
+          width: 100%;
+          justify-content: flex-start;
+          gap: 4rem; } }
+      @media only screen and (max-width: 26.875em) {
+        .section-about__skills-content {
+          gap: 1rem; } }
 
 .section-contact {
   border-bottom: 1px solid;
@@ -480,3 +476,8 @@ hr {
       .section-contact__social {
         flex-direction: column;
         align-items: flex-start; } }
+  .section-contact__content-email {
+    display: flex; }
+    @media only screen and (max-width: 26.875em) {
+      .section-contact__content-email {
+        flex-direction: column; } }
