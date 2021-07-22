@@ -19,7 +19,7 @@ const LandingPage = () => {
     const [copiedText, setCopiedText] = useState();
     return (
         <section className="section-padding">
-            <ScrollAnimation animateIn="animate__fadeInLeft" className="animate__animated" animateOnce={true}>
+            {/* <ScrollAnimation animateIn="animate__fadeInLeft" className="animate__animated" animateOnce={true}> */}
                 <div className="text__heading landing-page-heading">
                     <span className="arr-purple">&rarr;</span> I’m Hiba Fatima, a web
                     developer who builds and designs web applications and websites. At the
@@ -43,7 +43,7 @@ const LandingPage = () => {
                     </CopyToClipboard>
 
                 </div>
-            </ScrollAnimation>
+            {/* </ScrollAnimation> */}
         </section>
     );
 

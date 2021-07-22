@@ -29,7 +29,7 @@ html {
 body {
   box-sizing: border-box;
   background-color: #0c0c0c;
-  padding: 4rem;
+  padding: 2rem 4rem;
   overflow-x: hidden; }
   @media only screen and (max-width: 75em) {
     body {

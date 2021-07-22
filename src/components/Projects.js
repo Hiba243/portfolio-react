@@ -12,9 +12,9 @@ const Projects = () => {
         </ScrollAnimation>
         <section>
             <div className="project">
-                <ScrollAnimation animateIn="animate__rotateInUpLeft" className="animate__animated" animateOnce={true}>
+                {/* <ScrollAnimation animateIn="animate__rotateInUpLeft" className="animate__animated" animateOnce={true}> */}
                     <div className="project__img">&nbsp;</div>
-                </ScrollAnimation>
+                {/* </ScrollAnimation> */}
                 <div className="project__desc">
                     <div className="project__desc-content">
                         <p className="project__desc-content-h1 text__content">Project Name</p>
@@ -34,9 +34,9 @@ const Projects = () => {
         <hr />
         <section>
             <div className="project">
-                <ScrollAnimation animateIn="animate__rotateInUpRight" className="animate__animated" animateOnce={true}>
+                {/* <ScrollAnimation animateIn="animate__rotateInUpRight" className="animate__animated" animateOnce={true}> */}
                     <div className="project__img">&nbsp;</div>
-                </ScrollAnimation>
+                {/* </ScrollAnimation> */}
                 <div className="project__desc">
                     <div className="project__desc-content">
                         <p className="project__desc-content-h1 text__content">Project Name</p>
