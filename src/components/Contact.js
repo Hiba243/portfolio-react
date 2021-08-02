@@ -25,7 +25,7 @@ const Contact = () => {
             {/* </ScrollAnimation> */}
             <div className="section-contact__content-email">
             <p className="text__subheading">
-                Drop me a line:&nbsp;</p>
+                Drop me a mail:&nbsp;</p>
                 
                 <CopyToClipboard
                     text={"hibafatima24@gmail.com"}

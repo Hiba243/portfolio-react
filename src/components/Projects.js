@@ -10,50 +10,57 @@ const Projects = () => {
                 <span className="arr-purple">&rarr;</span> Selected Work
             </div>
         </ScrollAnimation>
-        <section>
-            <div className="project">
-                {/* <ScrollAnimation animateIn="animate__rotateInUpLeft" className="animate__animated" animateOnce={true}> */}
+        <Link to="/projects/p1">
+            <section>
+
+                <div className="project">
+                    {/* <ScrollAnimation animateIn="animate__rotateInUpLeft" className="animate__animated" animateOnce={true}> */}
                     <div className="project__img">&nbsp;</div>
-                {/* </ScrollAnimation> */}
-                <div className="project__desc">
-                    <div className="project__desc-content">
-                        <p className="project__desc-content-h1 text__content">Project Name</p>
-                        <p className="text__content">
-                            Deleniti dolorum fugit expedita maiores ipsam.
-                        </p>
-                    </div>
-                    <div className="project__link">
-                        <a href="#" className="link-effect text__content">View Demo</a>
-                        <Link to="/projects/p1" className="link-effect text__content">
-                            View Code
-                        </Link>
+                    {/* </ScrollAnimation> */}
+                    <div className="project__desc">
+                        <div className="project__desc-content">
+                            <p className="project__desc-content-h1 text__content">Project Name - Proj Desc</p>
+                            <div className="text__content">
+                                <p className="project__desc-content-feat">React | Firebase</p>
+                            </div>
+                        </div>
+                        <div className="project__link">
+                            <a href="#" className="link-effect text__content">Go To Project &rarr;</a>
+                            <p Link to="/projects/p1" className="link-effect text__content">
+                                View Code &rarr;
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <hr />
+
+            </section>
+            <hr className="project-hr" />
+        </Link>
         <section>
-            <div className="project">
-                {/* <ScrollAnimation animateIn="animate__rotateInUpRight" className="animate__animated" animateOnce={true}> */}
+            <Link to="projects/p1">
+                <div className="project">
+                    {/* <ScrollAnimation animateIn="animate__rotateInUpRight" className="animate__animated" animateOnce={true}> */}
                     <div className="project__img">&nbsp;</div>
-                {/* </ScrollAnimation> */}
-                <div className="project__desc">
-                    <div className="project__desc-content">
-                        <p className="project__desc-content-h1 text__content">Project Name</p>
-                        <p className="text__content">
-                            Deleniti dolorum fugit expedita maiores ipsam.
-                        </p>
-                    </div>
-                    <div className="project__link">
-                        <a href="#" className="link-effect text__content">View Demo</a>
-                        <Link to="/projects/p2" className="link-effect text__content">View Code
-                        </Link>
+                    {/* </ScrollAnimation> */}
+                    <div className="project__desc">
+                        <div className="project__desc-content">
+                            <p className="project__desc-content-h1 text__content">Project Name - Proj Desc</p>
+                            <div className="text__content">
+                                <p className="project__desc-content-feat">React | Firebase</p>
+                            </div>
+                        </div>
+                        <div className="project__link">
+                            <a href="#" className="link-effect text__content">Go To Project &rarr;</a>
+                            <p href="/projects/p1" className="link-effect text__content">
+                                View Code &rarr;
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </Link>
         </section>
     </section>
-    
+
 }
 
 export default Projects;

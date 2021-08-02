@@ -54,7 +54,7 @@ const Navbar = () => {
           <div className="link-flex">
             <div className="star" id="star-1" ref={refStar1}></div>
             <li className="nav__item">
-              <a href="#about" className="nav__link link-effect" onClick={closeMenu} onMouseOver={rotate1} onMouseLeave={rotate1}
+              <a href="#about" className="nav__link" onClick={closeMenu} onMouseOver={rotate1} onMouseLeave={rotate1}
               >About</a
               >
             </li>
@@ -62,13 +62,13 @@ const Navbar = () => {
           <div className="link-flex">
             <div className="star" id="star-2" ref={refStar2}></div>
             <li className="nav__item">
-              <a href="#work" className="nav__link link-effect" onClick={closeMenu} onMouseOver={rotate2} onMouseLeave={rotate2}>Work</a>
+              <a href="#work" className="nav__link" onClick={closeMenu} onMouseOver={rotate2} onMouseLeave={rotate2}>Work</a>
             </li>
           </div>
           <div className="link-flex">
             <div className="star" id="star-3" ref={refStar3}></div>
             <li className="nav__item">
-              <a href="#contact" className="nav__link link-effect" onClick={closeMenu} onMouseOver={rotate3} onMouseLeave={rotate3}
+              <a href="#contact" className="nav__link" onClick={closeMenu} onMouseOver={rotate3} onMouseLeave={rotate3}
               >Contact</a
               >
             </li>

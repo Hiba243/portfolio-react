@@ -2,12 +2,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3rem 2rem;
+  padding: 0 0 0 2rem;
+  @include respond(tab-land) {
+    padding: 3rem 2rem;
+  }
   @include respond(phone) {
     padding: 3rem 1.5rem;
   }
-  border: 1px solid;
+  border: none;
+  border-bottom: 1px solid;
+  @include respond(tab-land) {
+  border: 1px solid ;
   border-bottom: none;
+  }
 }
 
 .nav {
@@ -22,11 +29,10 @@
     @include respond(tab-land) {
       font-size: 1.65rem;
     }
-    padding-bottom: 0.4rem;
     color: $color-secondary;
   }
   &__item {
-    margin: 0 2rem 0 1rem;
+    margin: 0 0 0 1rem;
   }
   &__logo {
     font-size: 1.5rem;
@@ -108,4 +114,13 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding: 1rem;
+  border-left: 1px solid;
+  @include respond(tab-land){
+    border-left: none;
+  }
 }
+.link-flex:hover{
+  background-color: rgba(143, 109, 245, .5);
+}
+
