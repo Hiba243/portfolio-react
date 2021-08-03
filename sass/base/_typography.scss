@@ -38,10 +38,9 @@ body {
   @include respond(phone) {
     padding: 3rem 1.5rem;
   }
-  border: none;
-  border-bottom: 1px solid;
-  @include respond(tab-land) {
-    border: 1px solid;
-    border-bottom: none;
-  }
+  border: 1px solid;
+  border-bottom: none;
+}
+.color-yellow{
+  color:$color-yellow;
 }

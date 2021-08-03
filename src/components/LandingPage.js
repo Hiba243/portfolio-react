@@ -21,11 +21,11 @@ const LandingPage = () => {
         <section className="section-padding">
             {/* <ScrollAnimation animateIn="animate__fadeInLeft" className="animate__animated" animateOnce={true}> */}
                 <div className="text__heading landing-page-heading">
-                    <span className="arr-purple">&rarr;</span> I’m Hiba Fatima, a web
+                    <span className="arr-purple">&rarr;&nbsp;</span>I’m Hiba Fatima, a web
                     developer who builds and designs web applications and websites. At the
                     intersection of functionality and aesthetics, lorem ipsum dolor sit
-                    iusto eveniet quae aperiam ipsum. Let’s make something great!&nbsp;
-                    <CopyToClipboard
+                    iusto eveniet quae aperiam ipsum.
+                    {/* <CopyToClipboard
                         text={"hibafatima24@gmail.com"}
                         onCopy={() => setCopiedText("hibafatima24@gmail.com")}
                     >
@@ -40,7 +40,7 @@ const LandingPage = () => {
                         >
                             <p className="copy-click">hibafatima24@gmail.com</p>
                         </LightTooltip>
-                    </CopyToClipboard>
+                    </CopyToClipboard> */}
 
                 </div>
             {/* </ScrollAnimation> */}

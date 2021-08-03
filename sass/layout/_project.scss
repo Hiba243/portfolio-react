@@ -1,21 +1,24 @@
 .section-work {
+  padding: 0;
   padding-bottom: 1rem;
   @include respond(phone) {
     padding-bottom: 1.5rem;
+  }
+  &__heading{
+    padding:3rem 2rem 0rem 2rem;
+    @include respond(phone) {
+      padding: 3rem 1.5rem 0rem 1.5rem;
+    }
   }
 }
 
 .project {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
-  border: 1px solid $color-secondary;
-  margin-bottom: 3rem;
-  @include respond(tab-land) {
-    padding: 0;
-    border: none;
-    margin-bottom: 0;
-  }
+  padding:0 2rem;
+    @include respond(phone) {
+      padding: 0 1.5rem;
+    }
   &__img {
     background-color: $color-secondary;
     width: 100%;
@@ -25,10 +28,7 @@
     display: flex;
     flex-direction: row;
     margin-top: 2rem;
-    color:$color-secondary;
-    @include respond(tab-land) {
     margin-bottom: 2rem;
-    }
     @include respond(phone) {
       flex-direction: column;
     }
@@ -36,6 +36,7 @@
       width: 60%;
       display: flex;
       flex-direction: column;
+      color: $color-secondary;
       @include respond(phone) {
         width: 100%;
       }
@@ -53,7 +54,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    justify-content: flex-end;
+    justify-content: flex-start;
     @include respond(phone) {
       width: 100%;
       flex-direction: row;
@@ -68,14 +69,5 @@ hr {
   border-top-width: 0px;
   border-left-width: 0px;
   border-right-width: 0px;
-}
-.project:hover{
-  background-color: rgba(143, 109, 245, .5);
-}
-.project-hr{
-  display: none;
-  @include respond(tab-land) {
-    display: block;
-    color: $color-secondary;
-  }
+  color: $color-secondary;
 }

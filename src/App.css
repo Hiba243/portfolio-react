@@ -29,7 +29,8 @@ html {
 body {
   box-sizing: border-box;
   background-color: #0c0c0c;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  padding: 4rem; }
   @media only screen and (max-width: 75em) {
     body {
       padding: 3rem; } }
@@ -227,15 +228,14 @@ body {
 
 .section-padding {
   padding: 3rem 2rem;
-  border: none;
-  border-bottom: 1px solid; }
+  border: 1px solid;
+  border-bottom: none; }
   @media only screen and (max-width: 26.875em) {
     .section-padding {
       padding: 3rem 1.5rem; } }
-  @media only screen and (max-width: 75em) {
-    .section-padding {
-      border: 1px solid;
-      border-bottom: none; } }
+
+.color-yellow {
+  color: #fed206; }
 
 .flower {
   z-index: 5000; }
@@ -293,19 +293,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 0 0 2rem;
-  border: none;
-  border-bottom: 1px solid; }
-  @media only screen and (max-width: 75em) {
-    .navbar {
-      padding: 3rem 2rem; } }
+  padding: 3rem 2rem;
+  border: 1px solid;
+  border-bottom: none; }
   @media only screen and (max-width: 26.875em) {
     .navbar {
       padding: 3rem 1.5rem; } }
-  @media only screen and (max-width: 75em) {
-    .navbar {
-      border: 1px solid;
-      border-bottom: none; } }
 
 .nav__menu {
   display: flex;
@@ -315,13 +308,14 @@ body {
 
 .nav__link {
   font-size: 1.5rem;
+  padding-bottom: .4rem;
   color: #faf6f0; }
   @media only screen and (max-width: 75em) {
     .nav__link {
       font-size: 1.65rem; } }
 
 .nav__item {
-  margin: 0 0 0 1rem; }
+  margin: 0 2rem 0 1rem; }
 
 .nav__logo {
   font-size: 1.5rem;
@@ -336,7 +330,7 @@ body {
 .bar {
   display: block;
   width: 25px;
-  height: 3px;
+  height: 1px;
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -372,8 +366,8 @@ body {
     opacity: 0;
     background-color: #faf6f0; }
   .hamburger.active .bar:nth-child(1) {
-    -webkit-transform: translateY(8px) rotate(45deg);
-    transform: translateY(8px) rotate(45deg);
+    -webkit-transform: translateY(4px) rotate(45deg);
+    transform: translateY(4px) rotate(45deg);
     background-color: #faf6f0; }
   .hamburger.active .bar:nth-child(3) {
     -webkit-transform: translateY(-8px) rotate(-45deg);
@@ -383,36 +377,30 @@ body {
 .link-flex {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  padding: 1rem;
-  border-left: 1px solid; }
-  @media only screen and (max-width: 75em) {
-    .link-flex {
-      border-left: none; } }
-
-.link-flex:hover {
-  background-color: rgba(143, 109, 245, 0.5); }
+  align-items: center; }
 
 .landing-page-heading {
   margin-bottom: 0; }
 
 .section-work {
+  padding: 0;
   padding-bottom: 1rem; }
   @media only screen and (max-width: 26.875em) {
     .section-work {
       padding-bottom: 1.5rem; } }
+  .section-work__heading {
+    padding: 3rem 2rem 0rem 2rem; }
+    @media only screen and (max-width: 26.875em) {
+      .section-work__heading {
+        padding: 3rem 1.5rem 0rem 1.5rem; } }
 
 .project {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
-  border: 1px solid #faf6f0;
-  margin-bottom: 3rem; }
-  @media only screen and (max-width: 75em) {
+  padding: 0 2rem; }
+  @media only screen and (max-width: 26.875em) {
     .project {
-      padding: 0;
-      border: none;
-      margin-bottom: 0; } }
+      padding: 0 1.5rem; } }
   .project__img {
     background-color: #faf6f0;
     width: 100%;
@@ -421,17 +409,15 @@ body {
     display: flex;
     flex-direction: row;
     margin-top: 2rem;
-    color: #faf6f0; }
-    @media only screen and (max-width: 75em) {
-      .project__desc {
-        margin-bottom: 2rem; } }
+    margin-bottom: 2rem; }
     @media only screen and (max-width: 26.875em) {
       .project__desc {
         flex-direction: column; } }
     .project__desc-content {
       width: 60%;
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      color: #faf6f0; }
       @media only screen and (max-width: 26.875em) {
         .project__desc-content {
           width: 100%; } }
@@ -444,7 +430,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    justify-content: flex-end; }
+    justify-content: flex-start; }
     @media only screen and (max-width: 26.875em) {
       .project__link {
         width: 100%;
@@ -457,34 +443,20 @@ hr {
   border-bottom: 1px solid;
   border-top-width: 0px;
   border-left-width: 0px;
-  border-right-width: 0px; }
-
-.project:hover {
-  background-color: rgba(143, 109, 245, 0.5); }
-
-.project-hr {
-  display: none; }
-  @media only screen and (max-width: 75em) {
-    .project-hr {
-      display: block;
-      color: #faf6f0; } }
+  border-right-width: 0px;
+  color: #faf6f0; }
 
 .section-about {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  padding: 0; }
   @media only screen and (max-width: 75em) {
     .section-about {
       gap: 3rem;
-      padding: 3rem 2rem;
-      border: none;
-      border-bottom: 1px solid; } }
-  @media only screen and (max-width: 75em) and (max-width: 26.875em) {
+      padding: 3rem 2rem; } }
+  @media only screen and (max-width: 26.875em) {
     .section-about {
       padding: 3rem 1.5rem; } }
-  @media only screen and (max-width: 75em) and (max-width: 75em) {
-    .section-about {
-      border: 1px solid;
-      border-bottom: none; } }
   @media only screen and (max-width: 75em) {
     .section-about {
       flex-direction: column; } }
@@ -492,7 +464,6 @@ hr {
     width: 60%;
     padding: 3rem 2rem;
     border-right: 1px solid;
-    border-bottom: 1px solid;
     display: flex;
     flex-direction: column; }
     @media only screen and (max-width: 75em) {
@@ -508,7 +479,7 @@ hr {
       display: flex;
       flex-direction: column;
       height: 100%;
-      justify-content: space-around; }
+      justify-content: space-between; }
   .section-about__skills {
     display: flex;
     flex-direction: column;
@@ -524,6 +495,8 @@ hr {
         .section-about__skills-1, .section-about__skills-2 {
           padding: 0;
           border-bottom: none; } }
+    .section-about__skills-2 {
+      border-bottom: none; }
     .section-about__skills-content {
       display: flex;
       flex-wrap: wrap;

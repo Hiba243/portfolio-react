@@ -2,19 +2,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 0 0 2rem;
-  @include respond(tab-land) {
-    padding: 3rem 2rem;
-  }
+  padding: 3rem 2rem;
   @include respond(phone) {
     padding: 3rem 1.5rem;
   }
-  border: none;
-  border-bottom: 1px solid;
-  @include respond(tab-land) {
-  border: 1px solid ;
+  border:1px solid;
   border-bottom: none;
-  }
 }
 
 .nav {
@@ -29,10 +22,11 @@
     @include respond(tab-land) {
       font-size: 1.65rem;
     }
+    padding-bottom: .4rem;
     color: $color-secondary;
   }
   &__item {
-    margin: 0 0 0 1rem;
+    margin: 0 2rem 0 1rem;
   }
   &__logo {
     font-size: 1.5rem;
@@ -50,7 +44,7 @@
 .bar {
   display: block;
   width: 25px;
-  height: 3px;
+  height: 1px;
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -99,8 +93,8 @@
   }
 
   .hamburger.active .bar:nth-child(1) {
-    -webkit-transform: translateY(8px) rotate(45deg);
-    transform: translateY(8px) rotate(45deg);
+    -webkit-transform: translateY(4px) rotate(45deg);
+    transform: translateY(4px) rotate(45deg);
     background-color: $color-secondary;
   }
 
@@ -114,13 +108,5 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 1rem;
-  border-left: 1px solid;
-  @include respond(tab-land){
-    border-left: none;
-  }
-}
-.link-flex:hover{
-  background-color: rgba(143, 109, 245, .5);
 }
 

@@ -1,18 +1,13 @@
 .section-about {
   display: flex;
   flex-direction: row;
+  padding: 0;
   @include respond(tab-land) {
   gap:3rem;
   padding: 3rem 2rem;
+  }
   @include respond(phone) {
     padding: 3rem 1.5rem;
-  }
-  border: none;
-  border-bottom: 1px solid;
-  @include respond(tab-land) {
-    border: 1px solid;
-    border-bottom: none;
-  }
   }
   @include respond(tab-land) {
     flex-direction: column;
@@ -21,7 +16,6 @@
     width: 60%;
     padding: 3rem 2rem;
     border-right: 1px solid;
-    border-bottom: 1px solid;
     display: flex;
     flex-direction: column;
     @include respond(tab-land) {
@@ -37,7 +31,7 @@
       display: flex;
       flex-direction: column;
       height: 100%;
-      justify-content: space-around;
+      justify-content: space-between;
     }
   }
   &__skills {
@@ -56,6 +50,9 @@
         padding: 0;
         border-bottom: none;
       }
+    }
+    &-2{
+      border-bottom: none;
     }
     &-content {
       display: flex;

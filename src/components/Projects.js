@@ -5,18 +5,18 @@ import ScrollAnimation from 'react-animate-on-scroll';
 const Projects = () => {
 
     return <section className="section-padding section-work" id="work">
-        <ScrollAnimation animateIn="animate__fadeInLeft" className="animate__animated" animateOnce={true}>
-            <div className="text__heading">
+        {/* <ScrollAnimation animateIn="animate__fadeInLeft" className="animate__animated" animateOnce={true}> */}
+            <div className="text__heading section-work__heading">
                 <span className="arr-purple">&rarr;</span> Selected Work
             </div>
-        </ScrollAnimation>
+        {/* </ScrollAnimation> */}
         <Link to="/projects/p1">
             <section>
 
                 <div className="project">
-                    {/* <ScrollAnimation animateIn="animate__rotateInUpLeft" className="animate__animated" animateOnce={true}> */}
+                    <ScrollAnimation animateIn="animate__fadeInUp" className="animate__animated" animateOnce={true}>
                     <div className="project__img">&nbsp;</div>
-                    {/* </ScrollAnimation> */}
+                    </ScrollAnimation> 
                     <div className="project__desc">
                         <div className="project__desc-content">
                             <p className="project__desc-content-h1 text__content">Project Name - Proj Desc</p>
@@ -25,10 +25,8 @@ const Projects = () => {
                             </div>
                         </div>
                         <div className="project__link">
-                            <a href="#" className="link-effect text__content">Go To Project &rarr;</a>
-                            <p Link to="/projects/p1" className="link-effect text__content">
-                                View Code &rarr;
-                            </p>
+                            <a className="link-effect text__content">Go To Project &rarr;</a>
+                            
                         </div>
                     </div>
                 </div>
@@ -39,9 +37,9 @@ const Projects = () => {
         <section>
             <Link to="projects/p1">
                 <div className="project">
-                    {/* <ScrollAnimation animateIn="animate__rotateInUpRight" className="animate__animated" animateOnce={true}> */}
+                    <ScrollAnimation animateIn="animate__fadeInUp" className="animate__animated" animateOnce={true}>
                     <div className="project__img">&nbsp;</div>
-                    {/* </ScrollAnimation> */}
+                    </ScrollAnimation> 
                     <div className="project__desc">
                         <div className="project__desc-content">
                             <p className="project__desc-content-h1 text__content">Project Name - Proj Desc</p>
@@ -50,10 +48,8 @@ const Projects = () => {
                             </div>
                         </div>
                         <div className="project__link">
-                            <a href="#" className="link-effect text__content">Go To Project &rarr;</a>
-                            <p href="/projects/p1" className="link-effect text__content">
-                                View Code &rarr;
-                            </p>
+                            <a className="link-effect text__content">Go To Project &rarr;</a>
+                            
                         </div>
                     </div>
                 </div>

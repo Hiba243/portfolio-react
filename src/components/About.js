@@ -3,13 +3,13 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 const About = () => {
 
-    return <section className="section-about" id="about">
+    return <section className="section-about section-padding" id="about">
         <div className="section-about__about">
-            <ScrollAnimation animateIn="animate__fadeInLeft" className="animate__animated" animateOnce={true}>
+            {/* <ScrollAnimation animateIn="animate__fadeInLeft" className="animate__animated" animateOnce={true}> */}
                 <div className="text__heading ">
                     <span className="arr-purple">&rarr;</span> About Me
                 </div>
-            </ScrollAnimation>
+            {/* </ScrollAnimation> */}
             <div className="section-about__about-content">
 
                 <div className="text__content">
@@ -28,15 +28,20 @@ const About = () => {
                     Aenean sed adipiscing diam donec adipiscing tristique risus nec
                     feugiat.
                 </div>
+                <div className="text__content">
+                    Nec ultrices dui sapien eget mi proin sed libero enim.
+                    Aenean sed adipiscing diam donec adipiscing tristique risus nec
+                    feugiat.
+                </div>
             </div>
         </div>
         <div className="section-about__skills">
             <div className="section-about__skills-1">
-                <ScrollAnimation animateIn="animate__fadeInLeft" className="animate__animated" animateOnce={true}>
+                {/* <ScrollAnimation animateIn="animate__fadeInLeft" className="animate__animated" animateOnce={true}> */}
                     <div className="text__heading">
                         <span className="arr-purple">&rarr;</span> What I Do
                     </div>
-                </ScrollAnimation>
+                {/* </ScrollAnimation> */}
                 <div className="section-about__skills-content text__content">
                     <div className="color-purple">HTML</div>
                     <div className="color-purple">HTML</div>
@@ -50,11 +55,11 @@ const About = () => {
                 </div>
             </div>
             <div className="section-about__skills-2">
-                <ScrollAnimation animateIn="animate__fadeInLeft" className="animate__animated" animateOnce={true}>
+                {/* <ScrollAnimation animateIn="animate__fadeInLeft" className="animate__animated" animateOnce={true}> */}
                     <div className="text__heading">
                         <span className="arr-purple">&rarr;</span> My Toolkit
                     </div>
-                </ScrollAnimation>
+                {/* </ScrollAnimation> */}
                 <div className="section-about__skills-content text__content">
                     <div className="color-purple">HTML</div>
                     <div className="color-purple">HTML</div>
