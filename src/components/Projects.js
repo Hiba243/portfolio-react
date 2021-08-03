@@ -14,7 +14,7 @@ const Projects = () => {
             <section>
 
                 <div className="project">
-                    <ScrollAnimation animateIn="animate__fadeInUp" className="animate__animated" animateOnce={true}>
+                    <ScrollAnimation animateIn="animate__fadeInUp" className="animate__animated" animateOnce={true} duration={2}>
                     <div className="project__img">&nbsp;</div>
                     </ScrollAnimation> 
                     <div className="project__desc">
@@ -37,7 +37,7 @@ const Projects = () => {
         <section>
             <Link to="projects/p1">
                 <div className="project">
-                    <ScrollAnimation animateIn="animate__fadeInUp" className="animate__animated" animateOnce={true}>
+                    <ScrollAnimation animateIn="animate__fadeInUp" className="animate__animated" animateOnce={true} duration={2}>
                     <div className="project__img">&nbsp;</div>
                     </ScrollAnimation> 
                     <div className="project__desc">

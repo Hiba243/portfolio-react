@@ -10,8 +10,8 @@ const Home = () => {
         <React.Fragment>
             <Navbar/>
             <LandingPage/>
-            <Projects/>
             <About/>
+            <Projects/>
             <Contact/>
         </React.Fragment>
     )
