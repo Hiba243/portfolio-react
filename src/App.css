@@ -384,7 +384,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 1rem;
+  padding: 1.5rem;
   border-left: 1px solid; }
   @media only screen and (max-width: 75em) {
     .link-flex {
